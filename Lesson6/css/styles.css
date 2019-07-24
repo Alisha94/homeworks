@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+}
+
+.box1 {
+	width: 1200px;
+	height: 675px;
+	border: 1px solid #d7d7d7;
+	background-color: #F5F5F5;
+	/*  margin: 0 auto; */ /* почему это центрирует только по горизонтали? */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -337px;
+  margin-left: -600px; /* такой метод вообще верный? я понимаю как работают 
+  последние 2 строки с margin. с минусом они уводят блок за пределы страницы
+  до срединной точки серого блока. но почему предыдушие 3 строки из этого 
+  делают блок по центру страницы? не понимаю механизм. */
+}
+
+.box2 {
+	width: 1010px;
+	height: 503px;
+	border: 1px solid #d7d7d7;
+	background-color: #ffffff;
+	margin: 86px 95px;
+}
+
+.image {
+	width: 376px;
+	height: 375px;
+	margin: 64px 100px 64px 48px;
+  /* img это строчно-блочный элемент? почему не понадобилось ставить 
+  display: inline-block  для картинки, чтобы последующий элемент шел рядом?
+  хватило display: inline-block только для .right-side*/
+}
+
+.right-side {
+	display: inline-block;
+	width: 393px;
+	margin: 94px 87px 0 0; /* вот тут вопрос логики. почему не бьется математика?
+	если взять margin слева у картирки 48, width картинки 376, margin справа
+	у картинки 100, width y right-side 393, margin справа у right-side 87,
+	то будет 1004. а ширина белого прямоугольника 1010. где 6 px??? вместо 
+	margin 87 хотела тут поставить 93 как на макете, но подобрала вручную 87,
+	иначе блок не влазил в белый прямоугольник с картинкой. */
+	vertical-align: top;
+}
+
+.title {
+	width: 178px;
+	height: 22px;
+	color: #2f2f2f;
+	font-family: "Arial - Bold MT";
+	font-size: 23px;
+	/* font-weight: 400; */ /* зачем эта строка вообще нужна?*/
+	margin: 0;
+}
+
+.text {
+	width: 393px;
+	height: 50px;
+	color: #2f2f2f;
+	font-family: "Arial MT";
+	font-size: 15px;
+	font-weight: 400; /* почему значение 400 не делает текст жирным?
+	зачем эта строка вообще нужна?*/
+	margin: 30px 0;
+}
+
+.price1 {
+	width: 35px;
+	height: 14px;
+	color: #2f2f2f;
+	font-family: "Arial MT";
+	font-size: 15px;
+	font-weight: 400; /* почему значение 400 не делает текст жирным?
+	зачем эта строка вообще нужна?*/
+	margin: 55px 0 0 0;
+}
+
+.price2 {
+	width: 103px;
+	height: 28px;
+	color: #2f2f2f;
+	font-family: "Arial MT";
+	font-size: 30px;
+	font-weight: 400; /* почему значение 400 не делает текст жирным?
+	зачем эта строка вообще нужна?*/
+	margin: 23px 0 0 0;
+}
+
+button {
+	width: 252px;
+	height: 50px;
+	background-color: #ec744a;
+	border: 0;
+	color: white;
+	font-family: "Arial MT";
+	font-size: 19px;
+  font-weight: 400; /* почему значение 400 не делает текст жирным?
+  зачем эта строка вообще нужна?*/
+  margin: 56px 0 0 0;
+}
+
