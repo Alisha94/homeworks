@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+}
+
+.box {
+	width: 1520px;
+	height: 723px;
+	background-color: #f9f9f9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -361px;
+	margin-left: -760px;
+}
+
+.title {
+	width: 552px;
+	height: 31px;
+	color: #000000;
+	font-family: "Proxima Nova";
+	font-size: 36px; /* почему размер текста больше высоты блока (в макете)? */
+	font-weight: 400;
+	text-align: center;
+	margin: 100px 685px 100px 683px;
+}
+
+.blocks {
+	width: 1139px;
+	height: 366px;
+	display: flex;
+	justify-content: space-between;
+	margin: 25px; /* почему не сворачивается с margin от title? */
+}
+
+.block {
+	width: 263px;
+	height: 366px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.text {
+	height: 11px;
+	color: #000000;
+	font-family: "Proxima Nova";
+	font-size: 16px;
+	font-weight: 300;
+	margin: 25px 0 0 0;
+}
+
+.price {
+	height: 15px;
+	color: #000000;
+	font-family: "Proxima Nova";
+	font-size: 18px;
+	font-weight: 700;
+	margin: 25px 0 0 0;
+}
+
+button {
+	width: 200px;
+	height: 55px;
+	border: 1px solid #23bac1;
+	color: #23bac1;
+	font-family: "Proxima Nova";
+	font-size: 13px;
+	font-weight: 700;
+	background-color: #f9f9f9;
+	margin: 25px 0 0 0;
+}
+
+
